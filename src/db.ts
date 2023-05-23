@@ -1,3 +1,4 @@
+// Prisma Client: Auto-generated and type-safe query builder for Node.js & TypeScript
 import { PrismaClient } from "@prisma/client"
 
 const globalForPrisma = global as unknown as {
