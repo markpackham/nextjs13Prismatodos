@@ -6,7 +6,7 @@ function getTodos() {
   return prisma.todo.findMany();
 }
 
-async function toggleTodo() {
+async function toggleTodo(id: string, complete: boolean) {
   "use server";
 }
 
