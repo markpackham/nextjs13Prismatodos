@@ -7,8 +7,10 @@ type TodoItemProps = {
 export function TodoItem({ id, title, complete }: TodoItemProps) {
   return (
     <li className="flex gap-1 items-center">
-      <input type="text" />
-      <label htmlFor={id}></label>
+      <input id={id} type="checkbox" className="cursor-pointer peer" />
+      <label htmlFor={id} className="peer-checked:line-through">
+        {title}
+      </label>
     </li>
   );
 }
