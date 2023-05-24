@@ -8,6 +8,8 @@ function getTodos() {
 
 async function toggleTodo(id: string, complete: boolean) {
   "use server";
+
+  console.log(id, complete);
 }
 
 export default async function Home() {

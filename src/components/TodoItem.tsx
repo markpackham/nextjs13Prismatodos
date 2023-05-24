@@ -15,7 +15,7 @@ export function TodoItem({ id, title, complete, toggleTodo }: TodoItemProps) {
         type="checkbox"
         className="cursor-pointer peer"
         defaultChecked={complete}
-        onChange={(e) => (id, e.target.checked)}
+        onChange={(e) => toggleTodo(id, e.target.checked)}
       />
       <label
         htmlFor={id}
