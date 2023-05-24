@@ -1,4 +1,5 @@
 import { prisma } from "@/db";
+import { redirect } from "next/navigation";
 import Link from "next/link";
 
 async function createTodo(data: FormData) {
@@ -10,6 +11,7 @@ async function createTodo(data: FormData) {
   }
 
   await prisma.todo.create({ data: { title, complete: false } });
+  redirect("/");
 }
 
 export default function Page() {
