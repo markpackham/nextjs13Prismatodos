@@ -6,6 +6,10 @@ function getTodos() {
   return prisma.todo.findMany();
 }
 
+async function toggleTodo() {
+  "use server";
+}
+
 export default async function Home() {
   const todos = await getTodos();
   // await prisma.todo.create({ data: { title: "test", complete: false } });
